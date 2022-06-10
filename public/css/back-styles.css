@@ -1,0 +1,399 @@
+/*
+    MEDIDAS
+        XS: 0
+        SM: 576
+        MD: 768
+        LG: 992
+        XL: 1200
+    PALETA DE COLORES
+    FONDO OSCURO: #182231
+    FONDO CLARO: #29364B
+    ELEMENTOS PARA FONDO CLARO: #6D7683
+    ELEMENTOS PARA FONDO OSCURO: #626872
+    CELESTE CON CONTRASTE: #0079FF
+    COLOR EXTRA: #AF58BA
+    COLOR EXTRA2: #3F526D
+*/
+
+
+
+/* ==============================
+          GENERALES
+============================== */
+
+a, a:hover{
+    text-decoration:none;
+}
+
+
+
+/* ==============================
+          INICIO
+============================== */
+
+.inicio-atajos{
+    padding:20px;
+    width:100%;
+    color:white;
+    transition:.5s;
+}
+
+.inicio-atajos:hover{
+    color: #31343E;
+}
+
+.inicio-atajos div{
+    border:1px solid white;
+    text-align:center;
+    padding:20px;
+    transition:.5s;
+}
+
+.inicio-atajos h2{
+    font-size:20px;
+}
+
+.inicio-atajos i{
+    font-size:55px;
+    margin-bottom:20px;
+    color:white;
+}
+
+.inicio-atajos:hover div{
+    background-color:white;
+}
+
+.inicio-atajos:hover h2{
+    color:#31343E;
+}
+
+.inicio-atajos:hover i{
+    color:#31343E;
+}
+
+
+
+/* ==============================
+          NAVEGADOR
+============================== */
+
+#navegador{
+    background-color: #29364B;
+    color: #82868F;
+    margin-bottom:0 !important;
+}
+
+#navegador a{
+    color: #82868F;
+}
+
+#navegador i{
+    margin-right:10px;
+}
+
+#navegador .dropdown-menu{
+    background-color: transparent;
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+#navegador .dropdown-item{
+    padding-left:20px !important;
+}
+
+#navegador .dropdown-item:hover, #navegador .nav-item:hover a{
+    background-color: #3F526D;
+}
+
+#navegador .nav-item:hover a{
+    color:white;
+}
+
+#navegador .nav-item a {
+    padding:.7rem;
+    transition:.5s;
+}
+
+#navegador .nav-item{
+    cursor:pointer;
+    transition:.5s;
+}
+
+
+
+#navegador .nav-item-divider{
+    border-bottom:1px solid #82868F;
+    margin: 10px 0;
+} 
+
+/*NAVEGADOR EN ORDENADORES*/
+
+@media(min-width:992px){
+    #navegador .nav-item-divider{
+        border-left: 1px solid #82868F;
+        border-bottom:none;
+        margin: 0 20px;
+        padding:5px 0;
+        display:inline-block;
+    }
+    
+    #navegador .dropdown-menu{
+        background-color: #3F526D;
+        margin:0;
+        padding:0;
+        border-radius:0;
+        border:1px solid white;
+    }    
+}
+
+
+/* ==============================
+          CUERPO
+============================== */
+
+body{
+    background-color: #182231;
+    color: #626872;
+}
+
+.titulo{
+    font-size:1.5rem;
+    color:white;
+    margin-bottom:2rem;
+}
+
+.card{
+    background-color: #29364B;
+    color: #82868F;
+    border-radius:0;
+    margin-bottom:2rem;
+}
+
+/*=========================================
+                TABLAS
+=========================================*/
+   
+
+.tablita{
+    width:100% !important;
+    color:#82868F;
+}
+
+.table td{
+    border-color: #3F526D;
+}
+
+.tablita th{
+    border:none !important;
+    color:white;
+    font-weight: bold;
+} 
+
+.tablita th,
+.tablita td{
+    padding:20px;
+}
+
+.acciones button,
+.acciones a{
+    background-color:#0079FF;
+    color:white;
+    width:40px;
+    height:40px;
+    line-height: 40px;
+    display:inline-block !important;
+    border-radius:100% !important;
+    text-align:center;
+    transition:.5s;
+    margin:0 !important;
+}
+
+.acciones button:hover,
+.acciones a:hover{
+    transform:scale(.9) !important;
+    color:white;
+}
+
+
+
+
+@media(max-width:500px){
+    .tablita{
+        width:100%;
+        font-size: .9em;
+    }
+    
+    .tablita tr{
+        display:flex;
+        flex-direction: column;
+        padding:.5em;
+        margin:1em 0 !important;
+        text-align:center;
+        border-bottom: 1px solid #3F526D;
+    }
+    
+    .tablita thead{
+        display:none;
+    }
+    
+
+    
+    .tablita td[data-titulo]{
+        display:flex;
+        padding:.5em 0;
+    }
+    
+    .tablita td{
+        border:none;
+        display:block !important;
+    }
+    
+    .tablita td[data-titulo]::before{
+        content: attr(data-titulo);
+        font-weight:bold;
+        color:silver;
+        display:block !important;
+    }
+    
+    .tablita td.acciones {
+        display:flex!important;
+        justify-content: space-around
+    }
+}
+
+.myPagination .page-link{
+    background-color:#3F526D !important;
+    border:none;
+    color:white;
+}
+
+.myPagination li span,
+.myPagination li a{
+    border-radius:0 !important;
+    color:#3F526D;
+}
+
+
+.myPagination .active span{
+    background-color:#0079FF!important;
+    color:white !important;
+}
+
+.sinBtn{
+    margin:0;
+    padding:0;
+    display:inline;
+    border:none;
+}
+
+.acciones .btn{
+    vertical-align: none !important;
+}
+
+/* ==============================
+          VER DETALLE
+============================== */
+
+.ver-genero{
+    background-color: #3F526D;
+    display:inline;
+    padding:5px 10px;
+    color:white;
+}
+
+/*=========================================
+                MENSAJES
+=========================================*/
+
+.msj{
+    background-color: #0087BE;
+    color:white;
+    margin-bottom:20px;
+    padding-left:20px;
+}
+
+.msj p{
+    margin:0;
+    background:url(../img/icon/icon-info.png) no-repeat center left;
+    background-size: 30px 30px;
+    padding:20px 20px;
+    padding-left: 40px;
+}
+
+.msj-ok{background-color: #4AB866;}
+.msj-ok p{background-image: url(../img/icon/icon-ok.png);}
+.msj-error{background-color: #D94F4F;}
+.msj-error p{background-image: url(../img/icon/icon-error.png);}
+.msj-alert{background-color: #F0B849;}
+.msj-alert p{background-image: url(../img/icon/icon-alert.png);}
+.msj-info{background-color: #0087BE;}
+.msj-info p{background-image: url(../img/icon/icon-info.png);}
+
+/*=========================================
+                FORMULARIO
+=========================================*/
+
+form select,
+form textarea,
+form input{
+    background-color: #29364B !important;
+    border-color: #82868F !important;
+    border-radius:0 !important;
+    color:#82868F !important;
+}
+
+textarea{
+    resize:none;
+}
+
+.select2-container--default .select2-selection--multiple{
+    background-color: #29364B !important;
+    border-color: #82868F !important;
+    border-radius:0 !important;
+    color:#82868F !important;
+}
+
+/* ==============================
+            USUARIO 
+============================== */
+
+.usuario-ver h3{
+    color: #8D8D8D;
+    font-size:18px !important;
+}
+
+.usuario-ver h3 + p{
+    color: #777;
+}
+
+tr.usuario-destacado td{
+    color:gold !important;
+}
+
+/* ==============================
+          PIE DE PÁGINA
+============================== */
+
+#bottom{
+    background-color: #3F526D;
+    color: white;
+    margin-top:200px;
+}
+
+/*
+    MEDIDAS
+        XS: 0
+        SM: 576
+        MD: 768
+        LG: 992
+        XL: 1200
+    PALETA DE COLORES
+    FONDO OSCURO: #182231
+    FONDO CLARO: #29364B
+    ELEMENTOS PARA FONDO CLARO: #82868F
+    ELEMENTOS PARA FONDO OSCURO: #626872
+    CELESTE CON CONTRASTE: #0079FF
+    COLOR EXTRA: #AF58BA
+    COLOR EXTRA2: #3F526D
+*/
